@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{4e184f4f-dd0e-4cfe-8fe7-cd652fe56805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\glad">
+      <UniqueIdentifier>{befa8a28-76cd-4c30-a21d-28b0038a88d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C++_09_23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\glad\src\glad.c">
+      <Filter>libs\glad</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libs\GLFW\include\GLFW\glfw3.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\GLFW\include\GLFW\glfw3native.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
