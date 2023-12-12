@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <glad/glad.h>
+#include "libs/glm/ext/matrix_float4x4.hpp"
 
 class Shader {
 public:
@@ -12,6 +13,10 @@ public:
 
     void SetFloat(std::string name, float f) {
         glUniform1f(glGetUniformLocation(id, &name[0]), f);
+    }
+
+    void SetMat4(std::string name, glm::mat4x4 mat) {
+        glUniformMatrix4fv(glGetUniformLocation(id, name.c_str()), 1, GL_FALSE, &mat[0][0]);
     }
 
 	static Shader TryCompileShader(const char* vertex, const char* fragment, bool* out_success) {
